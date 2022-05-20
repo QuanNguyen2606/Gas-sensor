@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <head>
+    <style>
+      body {
+        font-family: 'Merriweather';
+        line-height: 1.5;
+        background-color:rgba(136, 136, 206, 0.7); 
+        width: 500px;
+        margin: auto;
+        background-image: url("./image/pexels-pixabay-266526.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      form{
+        background-color: orange;
+        backgrond-size: cover;
+        background-position: center;
+        padding: 16px;
+        border-radius: 8%;
+        width:  500px;
+        margin: auto;
+        line-height: 20px:
+      }
+
+      .submit-button{
+        border-radius:3%;
+        background-color: rgb(13,152,24,0.3);
+        color: white;
+        width: 20%;
+        height: 20%;
+        cursor: pointer ;
+      }
+
+      h1{
+        position: relative;
+        text-align: center;
+      }
+
+      #description{
+        position: relative;
+        font-size: 18px;
+      }
+    </style>
+    <title>Cảnh báo khí Gas</title>
+ <Header> 
+<h1 id = "title" style="font-size: 30px"> Ở đây có khí GAS </h1>
+  </Header>
+
+  <body>
+<p id = "description" >  Hãy điền vào các ô trống nhé </p>
+<form action="/result" method = "POST" id = survey-form >
+  <p> Họ và tên <input type = "text" name = "Name"/></p>
+  <p> Số điện thoại <input type = "text" name = "number"/></p>
+  <p> Gmail <input type = "text" name = "Email"/></p>
+
+<br><label for = "dropdown" id = "Trường_học">Trường học</label>
+<select id = "dropdown">
+  <option value = "NEU">Đại học Kinh tế quốc dân</option>
+  <option value = "HUST">Đại học Bách Khoa Hà Nội</option>
+  <option value = "VNU">Đại học Quốc Gia Hà Nội</option>
+  <option value = "FTU">Đại học Ngoại thương</option>
+  <option value = "AOF">Học viện tài chính</option>
+</select> 
+<br>
+<br>
+  <label for = "Job" id = "Job"><b> Bạn đang làm công việc gì: </b> </label>
+<br>
+  <input id = "Job" type = "radio" id = "student" name = "occupation" value = "student" > </input>
+  <label for = "Job"> Sinh viên </label>
+<br>
+  <input id = "Job" type = "radio" id = "Lecturer" name = "occupation" value = "Lecturer" >
+  <label for = "Job"> Giảng viên </label>
+<br>
+  <input id = "Job" type = "radio" id = "engineer" name = "occupation" value = "engineer" >
+  <label for = "Job"> Kỹ sư </label>
+<br>
+ <input id = "Job" type = "radio" id = "doctor" name = "occupation" value = "doctor" >
+  <label for = "Job"> Bác sĩ </label>
+<br>
+ <input id = "Job" type = "radio" id = "other" name = "occupation" value = "other" >
+  <label for = "Job"> Khác </label>
+<br>
+<button id = "submit" type = "submit" value = "hoan_thanh" class = "submit-button" > Hoàn thành </button>
+            
+            
+</div>           
+</form>
+</body>
+</html>
